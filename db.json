@@ -1,0 +1,574 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin_password_123",
+      "role": "admin",
+      "fullName": "Administrator",
+      "email": "admin@atelier.com",
+      "createdAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "user_password_456",
+      "role": "user",
+      "fullName": "John Doe",
+      "email": "john.doe@example.com",
+      "createdAt": "2026-03-15T10:30:00Z"
+    },
+    {
+      "id": 3,
+      "username": "jane_smith",
+      "password": "password789",
+      "role": "user",
+      "fullName": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "createdAt": "2026-03-18T14:20:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Structured Wool Overcoat",
+      "description": "A timeless silhouette crafted for elegance and warmth.",
+      "material": "Wool Blend",
+      "materialDescription": "80% Virgin Wool, 20% Cashmere for a soft yet durable finish.",
+      "collection": "Winter 2026",
+      "price": 1250,
+      "stockBySize": {
+        "S": 5,
+        "M": 5,
+        "L": 3,
+        "XL": 2
+      },
+      "images": [
+        "/images/product-1.svg",
+        "https://picsum.photos/seed/coat1_2/600/800"
+      ],
+      "tags": ["outerwear", "winter", "wool", "luxury"],
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "name": "Raw Silk Habit Shirt",
+      "description": "Minimalist design meeting the luxury of raw silk textures.",
+      "material": "Raw Silk",
+      "materialDescription": "100% Organic Raw Silk, hand-loomed for a unique natural grain.",
+      "collection": "Spring 2026",
+      "price": 480,
+      "stockBySize": {
+        "S": 10,
+        "M": 10,
+        "L": 5
+      },
+      "images": [
+        "/images/product-2.svg",
+        "https://picsum.photos/seed/shirt1_2/600/800"
+      ],
+      "tags": ["shirt", "silk", "minimalist", "spring"],
+      "stock": 25
+    },
+    {
+      "id": 3,
+      "name": "Linen Drape Trousers",
+      "description": "Fluid movement captured in high-waisted tailored linen.",
+      "material": "Linen",
+      "materialDescription": "Premium Belgian Linen, pre-washed for a soft handle.",
+      "collection": "Summer 2026",
+      "price": 320,
+      "stockBySize": {
+        "M": 15,
+        "L": 15,
+        "XL": 10
+      },
+      "images": [
+        "/images/product-3.svg",
+        "https://picsum.photos/seed/pants1_2/600/800"
+      ],
+      "tags": ["trousers", "linen", "summer", "relaxed"],
+      "stock": 40
+    },
+    {
+      "id": 4,
+      "name": "Architectural Tote XL",
+      "description": "A sculptural bag designed for the modern professional.",
+      "material": "Full Grain Leather",
+      "materialDescription": "Vegetable-tanned Italian leather that develops a beautiful patina.",
+      "collection": "Fall 2026",
+      "price": 1550,
+      "stockBySize": {
+        "One Size": 10
+      },
+      "images": [
+        "/images/product-4.svg",
+        "https://picsum.photos/seed/bag1_2/600/800"
+      ],
+      "tags": ["accessories", "leather", "bag", "luxury"],
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "name": "Oversized Cashmere Knit",
+      "description": "The ultimate comfort piece for cold winter mornings.",
+      "material": "Cashmere",
+      "materialDescription": "Grade A Mongolian Cashmere, 2-ply knit for extra warmth.",
+      "collection": "Winter 2026",
+      "price": 650,
+      "stockBySize": {
+        "S": 8,
+        "M": 7,
+        "L": 5
+      },
+      "images": [
+        "/images/product-5.svg",
+        "https://picsum.photos/seed/knit1_2/600/800"
+      ],
+      "tags": ["knitwear", "cashmere", "winter", "cozy"],
+      "stock": 20
+    },
+    {
+      "id": 6,
+      "name": "Minimalist Slip Dress",
+      "description": "Effortless elegance for evening events or summer days.",
+      "material": "Silk Satin",
+      "materialDescription": "Heavyweight 22-momme silk satin with a lustrous sheen.",
+      "collection": "Summer 2026",
+      "price": 420,
+      "stockBySize": {
+        "S": 15,
+        "M": 15
+      },
+      "images": [
+        "/images/product-6.svg",
+        "https://picsum.photos/seed/dress1_2/600/800"
+      ],
+      "tags": ["dress", "silk", "summer", "elegant"],
+      "stock": 30
+    },
+    {
+      "id": 7,
+      "name": "Tailored Cotton Blazer",
+      "description": "Sharp lines and structured shoulders in breathable cotton.",
+      "material": "Cotton Twill",
+      "materialDescription": "Fine-weave Egyptian cotton with a slight stretch for comfort.",
+      "collection": "Spring 2026",
+      "price": 780,
+      "stockBySize": {
+        "M": 5,
+        "L": 4,
+        "XL": 3
+      },
+      "images": [
+        "https://picsum.photos/seed/blazer1/600/800",
+        "https://picsum.photos/seed/blazer1_2/600/800"
+      ],
+      "tags": ["blazer", "cotton", "spring", "tailored"],
+      "stock": 12
+    },
+    {
+      "id": 8,
+      "name": "Sculptural Midi Skirt",
+      "description": "A high-fashion silhouette with architectural pleats.",
+      "material": "Wool Crepe",
+      "materialDescription": "Lightweight wool crepe that holds its shape perfectly.",
+      "collection": "Fall 2026",
+      "price": 540,
+      "stockBySize": {
+        "S": 6,
+        "M": 6,
+        "L": 6
+      },
+      "images": [
+        "https://picsum.photos/seed/skirt1/600/800",
+        "https://picsum.photos/seed/skirt1_2/600/800"
+      ],
+      "tags": ["skirt", "wool", "fall", "sculptural"],
+      "stock": 18
+    },
+    {
+      "id": 9,
+      "name": "Essential White Tee",
+      "description": "The perfect foundation for any outfit, refined for quality.",
+      "material": "Supima Cotton",
+      "materialDescription": "Long-staple Supima cotton, known for its strength and softness.",
+      "collection": "Spring 2026",
+      "price": 85,
+      "stockBySize": {
+        "S": 25,
+        "M": 30,
+        "L": 25,
+        "XL": 20
+      },
+      "images": [
+        "https://picsum.photos/seed/tee1/600/800",
+        "https://picsum.photos/seed/tee1_2/600/800"
+      ],
+      "tags": ["essentials", "cotton", "basics", "spring"],
+      "stock": 100
+    },
+    {
+      "id": 10,
+      "name": "Leather Chelsea Boots",
+      "description": "Handcrafted boots with a sleek, timeless design.",
+      "material": "Calfskin Leather",
+      "materialDescription": "Supple calfskin leather with a Goodyear-welted sole.",
+      "collection": "Winter 2026",
+      "price": 890,
+      "stockBySize": {
+        "38": 3,
+        "39": 3,
+        "40": 3,
+        "41": 3,
+        "42": 3
+      },
+      "images": [
+        "https://picsum.photos/seed/boots1/600/800",
+        "https://picsum.photos/seed/boots1_2/600/800"
+      ],
+      "tags": ["footwear", "leather", "winter", "classic"],
+      "stock": 15
+    },
+    {
+      "id": 11,
+      "name": "Silk Wrap Blouse",
+      "description": "A fluid silk blouse with a sophisticated wrap detail.",
+      "material": "Silk",
+      "materialDescription": "100% Mulberry Silk, sand-washed for a matte finish.",
+      "collection": "Spring 2026",
+      "price": 350,
+      "stockBySize": {
+        "S": 10,
+        "M": 12,
+        "L": 8
+      },
+      "images": [
+        "https://picsum.photos/seed/silkblouse/600/800"
+      ],
+      "tags": ["shirt", "silk", "spring"],
+      "stock": 30
+    },
+    {
+      "id": 12,
+      "name": "Linen Summer Dress",
+      "description": "Breathable linen dress for warm summer afternoons.",
+      "material": "Linen",
+      "materialDescription": "100% Organic Linen, naturally cool and durable.",
+      "collection": "Summer 2026",
+      "price": 280,
+      "stockBySize": {
+        "S": 15,
+        "M": 15,
+        "L": 10
+      },
+      "images": [
+        "https://picsum.photos/seed/linendress/600/800"
+      ],
+      "tags": ["dress", "linen", "summer"],
+      "stock": 40
+    },
+    {
+      "id": 13,
+      "name": "Denim Chore Jacket",
+      "description": "A rugged yet refined jacket in premium raw denim.",
+      "material": "Denim",
+      "materialDescription": "14oz Japanese Selvedge Denim, unwashed for a custom fade.",
+      "collection": "Fall 2026",
+      "price": 450,
+      "stockBySize": {
+        "M": 10,
+        "L": 10,
+        "XL": 5
+      },
+      "images": [
+        "https://picsum.photos/seed/denimjacket/600/800"
+      ],
+      "tags": ["outerwear", "denim", "fall"],
+      "stock": 25
+    },
+    {
+      "id": 14,
+      "name": "Raw Denim Trousers",
+      "description": "Classic straight-leg trousers in high-quality raw denim.",
+      "material": "Denim",
+      "materialDescription": "12oz Organic Cotton Denim, indigo dyed.",
+      "collection": "Spring 2026",
+      "price": 220,
+      "stockBySize": {
+        "S": 12,
+        "M": 15,
+        "L": 12,
+        "XL": 8
+      },
+      "images": [
+        "https://picsum.photos/seed/denimpants/600/800"
+      ],
+      "tags": ["trousers", "denim", "spring"],
+      "stock": 47
+    },
+    {
+      "id": 15,
+      "name": "Denim Midi Skirt",
+      "description": "A versatile midi skirt with a clean architectural silhouette.",
+      "material": "Denim",
+      "materialDescription": "Stretch Denim for comfort and shape retention.",
+      "collection": "Summer 2026",
+      "price": 180,
+      "stockBySize": {
+        "S": 10,
+        "M": 10,
+        "L": 10
+      },
+      "images": [
+        "https://picsum.photos/seed/denimskirt/600/800"
+      ],
+      "tags": ["dress", "denim", "summer"],
+      "stock": 30
+    },
+    {
+      "id": 16,
+      "name": "Cotton Poplin Dress",
+      "description": "Crisp cotton poplin dress with a modern minimalist cut.",
+      "material": "Cotton",
+      "materialDescription": "100% Cotton Poplin, lightweight and structured.",
+      "collection": "Spring 2026",
+      "price": 320,
+      "stockBySize": {
+        "S": 8,
+        "M": 10,
+        "L": 8
+      },
+      "images": [
+        "https://picsum.photos/seed/cottondress/600/800"
+      ],
+      "tags": ["dress", "cotton", "spring"],
+      "stock": 26
+    },
+    {
+      "id": 17,
+      "name": "Cashmere Scarf",
+      "description": "An oversized scarf in the softest Mongolian cashmere.",
+      "material": "Wool",
+      "materialDescription": "100% Cashmere Wool, incredibly soft and warm.",
+      "collection": "Winter 2026",
+      "price": 250,
+      "stockBySize": {
+        "One Size": 50
+      },
+      "images": [
+        "https://picsum.photos/seed/scarf/600/800"
+      ],
+      "tags": ["accessories", "wool", "winter"],
+      "stock": 50
+    },
+    {
+      "id": 18,
+      "name": "Linen Button-Down",
+      "description": "A relaxed fit button-down shirt in premium linen.",
+      "material": "Linen",
+      "materialDescription": "Pre-washed Linen for a soft, lived-in feel.",
+      "collection": "Summer 2026",
+      "price": 190,
+      "stockBySize": {
+        "S": 15,
+        "M": 20,
+        "L": 15,
+        "XL": 10
+      },
+      "images": [
+        "https://picsum.photos/seed/linenshirt/600/800"
+      ],
+      "tags": ["shirt", "linen", "summer"],
+      "stock": 60
+    },
+    {
+      "id": 19,
+      "name": "Knit Cardigan",
+      "description": "A chunky knit cardigan for effortless layering.",
+      "material": "Wool",
+      "materialDescription": "Merino Wool Blend, warm and breathable.",
+      "collection": "Fall 2026",
+      "price": 380,
+      "stockBySize": {
+        "S": 10,
+        "M": 12,
+        "L": 10
+      },
+      "images": [
+        "https://picsum.photos/seed/cardigan/600/800"
+      ],
+      "tags": ["knitwear", "wool", "fall"],
+      "stock": 32
+    },
+    {
+      "id": 20,
+      "name": "Ribbed Knit Polo",
+      "description": "A refined knit polo with a subtle ribbed texture.",
+      "material": "Cotton",
+      "materialDescription": "Fine Cotton Knit, soft against the skin.",
+      "collection": "Spring 2026",
+      "price": 240,
+      "stockBySize": {
+        "S": 12,
+        "M": 15,
+        "L": 12
+      },
+      "images": [
+        "https://picsum.photos/seed/knitpolo/600/800"
+      ],
+      "tags": ["knitwear", "cotton", "spring"],
+      "stock": 39
+    },
+    {
+      "id": 21,
+      "name": "Minimalist Leather Belt",
+      "description": "A sleek leather belt with a custom architectural buckle.",
+      "material": "Leather",
+      "materialDescription": "Full Grain Nappa Leather, durable and elegant.",
+      "collection": "Fall 2026",
+      "price": 150,
+      "stockBySize": {
+        "S": 20,
+        "M": 20,
+        "L": 20
+      },
+      "images": [
+        "https://picsum.photos/seed/belt/600/800"
+      ],
+      "tags": ["accessories", "leather", "fall"],
+      "stock": 60
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 2,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1,
+          "price": 1250,
+          "size": "M"
+        }
+      ],
+      "total": 1250,
+      "status": "Delivered",
+      "trackingNumber": "AT-9823741",
+      "paymentMethod": "Credit Card",
+      "createdAt": "2026-03-20T14:20:00Z",
+      "shippingAddress": "123 Fashion St, New York, NY"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 2,
+          "price": 480,
+          "size": "S"
+        }
+      ],
+      "total": 960,
+      "status": "Shipping",
+      "trackingNumber": "AT-1122334",
+      "paymentMethod": "PayPal",
+      "createdAt": "2026-03-21T09:15:00Z",
+      "shippingAddress": "456 Style Ave, Los Angeles, CA"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "items": [
+        {
+          "productId": 5,
+          "quantity": 1,
+          "price": 650,
+          "size": "S"
+        },
+        {
+          "productId": 9,
+          "quantity": 2,
+          "price": 85,
+          "size": "M"
+        }
+      ],
+      "total": 820,
+      "status": "Pending",
+      "trackingNumber": null,
+      "paymentMethod": "Apple Pay",
+      "createdAt": "2026-03-23T18:45:00Z",
+      "shippingAddress": "789 Design Blvd, Chicago, IL"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Coats"
+    },
+    {
+      "id": 2,
+      "name": "Shirts"
+    },
+    {
+      "id": 3,
+      "name": "Trousers"
+    },
+    {
+      "id": 4,
+      "name": "Accessories"
+    },
+    {
+      "id": 5,
+      "name": "Dresses"
+    },
+    {
+      "id": 6,
+      "name": "Knitwear"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "title": "Spring Collection 2026",
+      "image": "/images/product-1.svg",
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Artisanal Essentials",
+      "image": "/images/product-2.svg",
+      "active": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userId": 2,
+      "userName": "John Doe",
+      "rating": 5,
+      "comment": "Amazing quality, worth every penny.",
+      "createdAt": "2026-03-22T11:00:00Z"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "userId": 2,
+      "userName": "John Doe",
+      "rating": 4,
+      "comment": "Very soft material, but runs a bit large.",
+      "createdAt": "2026-03-23T15:30:00Z"
+    },
+    {
+      "id": 3,
+      "productId": 5,
+      "userId": 3,
+      "userName": "Jane Smith",
+      "rating": 5,
+      "comment": "The softest cashmere I've ever owned. Perfect fit.",
+      "createdAt": "2026-03-24T09:15:00Z"
+    }
+  ]
+}
